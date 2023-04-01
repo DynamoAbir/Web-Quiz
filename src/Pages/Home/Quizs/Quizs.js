@@ -9,12 +9,12 @@ const Quizs = () => {
     } = quizData.data;
     console.log(quizData.data);
     return (
-        <div className="bg-gray-900 text-white">
-            <h1 className='bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-4xl font-extrabold text-transparent sm:text-3xl'
+        <div className="bg-gray-400 text-white ">
+            <h1 className='text-white bg-clip-text text-4xl font-extrabold text-transparent sm:text-3xl'
             >Quizzes of {name}</h1>
 
             <h2 className='
-            bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-2xl my-2'
+            text-white bg-clip-text text-3xl font-extrabold text-transparent sm:text-2xl my-2'
             > Total {questions.length} Questions .</h2>
 
             {

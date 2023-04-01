@@ -2,6 +2,7 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Subject from './Subject';
 
+
 const Subjects = () => {
     const subdata = useLoaderData();
     return (

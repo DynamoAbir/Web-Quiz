@@ -21,8 +21,8 @@ const Quiz = ({ quiz }) => {
         toast(`Correct Answer is ${correctAnswer}`, { position: toast.POSITION.TOP_CENTER, autoClose: 1000 })
     }
     return (
-        <section className="bg-gray-900 text-white">
-            <div className='m-12 border border-blue-600 relative'>
+        <section className="bg-gray-400 text-white">
+            <div className='m-12 border border-white relative'>
                 <h2 className="
             font-bold mx-auto mt-8 max-w-xl sm:text-xl sm:leading-relaxed m-8 "
                 >Question { }: {question}</h2>
