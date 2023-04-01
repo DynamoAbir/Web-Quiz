@@ -10,15 +10,15 @@ const Quiz = ({ quiz }) => {
 
     const handleSelect = (option) => {
         if (option === correctAnswer) {
-            toast.success("Correct Answer !!!")
+            toast.success("Correct Answer !!!", { position: toast.POSITION.TOP_CENTER, autoClose: 1000 })
         }
         else {
-            toast.error("Incorrect Answer !!!")
+            toast.error("Incorrect Answer !!!", { position: toast.POSITION.TOP_CENTER, autoClose: 1000 })
         }
 
     }
     const handleCorrectAns = () => {
-
+        toast(`Correct Answer is ${correctAnswer}`, { position: toast.POSITION.TOP_CENTER, autoClose: 1000 })
     }
     return (
         <section className="bg-gray-900 text-white">
