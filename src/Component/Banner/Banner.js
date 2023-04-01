@@ -1,9 +1,12 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
 import image from '../../Assets/quiz-2.jpg'
+import Subjects from '../Subjects/Subjects';
 
 const Banner = () => {
+
     return (
-        <div className="hero  bg-base-200">
+        <div className="hero bg-base-200">
             <div className="hero-content flex-col lg:flex-row">
                 <img src={`${image}`} className="max-w-sm rounded-lg shadow-2xl" />
                 <div className='mx-20'>
@@ -12,6 +15,8 @@ const Banner = () => {
                     <p className="mb-5 text-2x">Here you can test your skills on React,JavaScript,CSS and Git</p>
                 </div>
             </div>
+
+
         </div>
     );
 };
