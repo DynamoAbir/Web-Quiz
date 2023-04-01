@@ -1,3 +1,4 @@
+import Error from "../Pages/Error/Error";
 import Quizs from "../Pages/Home/Quizs/Quizs";
 
 const { createBrowserRouter } = require("react-router-dom");
@@ -11,6 +12,7 @@ export const router = createBrowserRouter([
     {
         path: "/",
         element: <Root></Root>,
+        errorElement: <Error></Error>,
         children: [
             {
                 path: '/',

@@ -2,10 +2,12 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
+
 const Stats = () => {
     const statistics = useLoaderData().data;
     return (
-        <div className='h-screen flex items-center'>
+        <div className='h-screen flex items-center '>
+
             <div>
                 <ResponsiveContainer width="100%" height={400}>
                     <AreaChart
@@ -23,7 +25,7 @@ const Stats = () => {
                         <XAxis dataKey="name" />
                         <YAxis />
                         <Tooltip />
-                        <Area type="monotone" dataKey="total" stroke="#82ca9d" fill="#82ca9d" />
+                        <Area type="monotone" dataKey="total" stroke="#8884d8" fill="#8884d8" />
                     </AreaChart>
                 </ResponsiveContainer>
             </div>
