@@ -1,12 +1,13 @@
 import Error from "../Pages/Error/Error";
 import Quizs from "../Pages/Home/Quizs/Quizs";
+import Statistics from "../Pages/Statistics/Statistics";
 
 const { createBrowserRouter } = require("react-router-dom");
 const { default: Root } = require("../Layout/Root");
 const { default: Blog } = require("../Pages/Blog/Blog");
 const { default: Home } = require("../Pages/Home/Home/Home");
 const { default: Quiz } = require("../Pages/Home/Quiz/Quiz");
-const { default: Stats } = require("../Pages/Stats/Stats");
+
 
 export const router = createBrowserRouter([
     {
@@ -22,17 +23,17 @@ export const router = createBrowserRouter([
                 }
 
             },
-            {
-                path: '/statistics',
-                element: <Stats></Stats>,
-                loader: async () => {
-                    return fetch('https://openapi.programming-hero.com/api/quiz')
-                }
 
-            },
             {
                 path: "/blog",
                 element: <Blog></Blog>
+            },
+            {
+                path: '/statistics',
+                element: <Statistics></Statistics>,
+                loader: async () => {
+                    return fetch('https://openapi.programming-hero.com/api/quiz')
+                }
             },
             {
                 path: "/quiz",
